@@ -7,6 +7,7 @@ import { CheckboxInput, Container, Description, TextInput } from "./TodoItem.sty
 
 export function TodoItem(props) {
   const [isEditing, setIsEditing] = useState(false);
+  const [description, setDescription] = useState(props.description);
 
   const [isCompleted, setIsCompleted] = useState(false);
 
@@ -16,12 +17,18 @@ export function TodoItem(props) {
 
     setIsEditing(true);
   }
-
   function handleSaveClick() {
     // atualiza o estado de isEditing para o valor false
     // para que o input de texto seja escondido
 
     setIsEditing(false);
+  }
+
+  function handleDescriptionChange(event) {
+    // atualiza o estado de description para o valor do input de texto
+    // para que o input de texto seja atualizado em tempo real
+
+    setDescription(event.target.value);
   }
 
   return (
@@ -34,12 +41,14 @@ export function TodoItem(props) {
           }}
         />
       </div>
+      <div className="description">
+        {!isEditing && <Description isCompleted={isCompleted}>{props.description}</Description>}
 
-      <div className="description">{!isEditing && <Description isCompleted={isCompleted}>{props.description}</Description>}</div>
+        {isEditing && <TextInput type="text" value={description} onChange={handleDescriptionChange} />}
+      </div>
 
       <div className="actions">
         {!isEditing && <button onClick={handleEditClick}>Edit</button>}
-
         {isEditing && <button onClick={handleSaveClick}>Save</button>}
       </div>
     </Container>
