@@ -15,32 +15,26 @@ function App() {
       },
     ]);
   }
-
   function handleEditItem(id, description) {
     // encontra o indice do item a ser editado
     const todoItemIndex = todos.findIndex((todo) => todo.id === id);
-
     // cria um novo array de items com a copia do array de items atual
     const newTodos = [...todos];
-
     // atualiza o item do array com o novo valor de description
     newTodos[todoItemIndex] = {
       ...newTodos[todoItemIndex],
       description,
     };
-
     // atualiza o estado de todos com o novo array de items
     setTodos(newTodos);
   }
-
   return (
     <>
       <h1>Todo List</h1>
-
       <AddTodoInput onAddItem={handleAddNewTodoItem} />
 
       {todos.map((todo) => (
-        <TodoItem description={todo.description} onEditItem={handleEditItem} />
+        <TodoItem key={todo.id} description={todo.description} onEditItem={handleEditItem} />
       ))}
     </>
   );

@@ -20,10 +20,8 @@ export function TodoItem(props) {
     // atualiza o estado de isEditing para o valor false
     // para que o input de texto seja escondido
     setIsEditing(false);
-
     props.onEditItem(props.id, description);
   }
-
   function handleDescriptionChange(event) {
     // atualiza o estado de description para o valor do input de texto
     // para que o input de texto seja atualizado em tempo real
@@ -39,8 +37,9 @@ export function TodoItem(props) {
           }}
         />
       </div>
+
       <div className="description">
-        {!isEditing && <Description isCompleted={isCompleted}>{props.description}</Description>}
+        {!isEditing && <Description state={isCompleted ? "completed" : "non-completed"}>{props.description}</Description>}
         {isEditing && <TextInput type="text" value={description} onChange={handleDescriptionChange} />}
       </div>
       <div className="actions">
