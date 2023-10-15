@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-export const TodoItemStyled = styled.div`
+export const Container = styled.div`
   display: flex;
+
   align-items: center;
+
   justify-content: space-between;
   gap: 1rem;
   min-width: 40rem;
@@ -10,9 +12,11 @@ export const TodoItemStyled = styled.div`
   border-radius: 0.5rem;
   padding: 1rem;
   margin-top: 1rem;
+
   .checkbox {
     width: 1.5rem;
   }
+
   .description {
     flex: 1;
     text-align: left;
@@ -20,15 +24,21 @@ export const TodoItemStyled = styled.div`
     font-size: 1.2rem;
     margin-left: 0.5rem;
   }
+
   .actions {
     display: flex;
     gap: 0.5rem;
   }
 `;
 
-export const CheckboxStyled = styled.input`
+export const CheckboxInput = styled.input`
   width: 1.5rem;
+
   height: 1.5rem;
+
   margin-top: 0.5rem;
+
   margin-right: 1rem;
+
+  cursor: pointer;
 `;

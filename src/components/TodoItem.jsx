@@ -1,10 +1,16 @@
-import { CheckboxStyled, TodoItemStyled } from "./TodoItem.styled";
+import React, { useState } from "react";
+import { CheckboxInput, Container, Description } from "./TodoItem.styled";
 
 export function TodoItem() {
   return (
-    <TodoItemStyled>
+    <Container>
       <div className="checkbox">
-        <CheckboxStyled type="checkbox" />
+        <CheckboxInput
+          type="checkbox"
+          onChange={(event) => {
+            setIsCompleted(event.target.checked);
+          }}
+        />
       </div>
 
       <div className="description">Learn React</div>
@@ -12,6 +18,6 @@ export function TodoItem() {
       <div className="actions">
         <button className="edit">Edit</button>
       </div>
-    </TodoItemStyled>
+    </Container>
   );
 }
