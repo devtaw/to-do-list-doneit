@@ -1,5 +1,3 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { TodoItem } from "./components/TodoItem";
 
@@ -21,7 +19,7 @@ function App() {
   const [todos, setTodos] = useState(FAKE_DATA);
   return (
     <>
-      <h1>Todo List</h1>
+      <h1>Done It - Lista de Tarefas</h1>
 
       <TodoItem />
       <TodoItem />
