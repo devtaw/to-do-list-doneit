@@ -1,6 +1,6 @@
+import { useState } from "react";
 import "./App.css";
 import { TodoItem } from "./components/TodoItem";
-
 const FAKE_DATA = [
   {
     description: "Learn React",
@@ -19,11 +19,12 @@ function App() {
   const [todos, setTodos] = useState(FAKE_DATA);
   return (
     <>
-      <h1>Done It - Lista de Tarefas</h1>
+      <h1>Todo List</h1>
 
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
+      <TodoItem description="Learn SQL" />
+      <TodoItem description="Learn SQL" />
+      <TodoItem description="Learn SQL" />
+      <TodoItem description="Learn SQL" />
     </>
   );
 }
