@@ -21,10 +21,9 @@ function App() {
     <>
       <h1>Todo List</h1>
 
-      <TodoItem description="Learn SQL" />
-      <TodoItem description="Learn SQL" />
-      <TodoItem description="Learn SQL" />
-      <TodoItem description="Learn SQL" />
+      {todos.map((todo) => (
+        <TodoItem description={todo.description} />
+      ))}
     </>
   );
 }
