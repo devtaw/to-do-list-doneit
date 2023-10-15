@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./App.css";
 import { TodoItem } from "./components/TodoItem";
 import { AddTodoInput } from "./components/AddTodoInput";
-
 function App() {
   const [todos, setTodos] = useState([]);
   function handleAddNewTodoItem(description) {
@@ -32,9 +31,8 @@ function App() {
     <>
       <h1>Todo List</h1>
       <AddTodoInput onAddItem={handleAddNewTodoItem} />
-
       {todos.map((todo) => (
-        <TodoItem key={todo.id} description={todo.description} onEditItem={handleEditItem} />
+        <TodoItem key={todo.id} id={todo.id} description={todo.description} onEditItem={handleEditItem} />
       ))}
     </>
   );
