@@ -2,27 +2,45 @@ import { useState } from "react";
 import "./App.css";
 import { TodoItem } from "./components/TodoItem";
 import { AddTodoInput } from "./components/AddTodoInput";
+
 function App() {
   const [todos, setTodos] = useState([]);
-
   function handleAddNewTodoItem(description) {
     setTodos((todos) => [
       ...todos,
       {
+        id: todos.length + 1,
         description,
         isCompleted: false,
       },
     ]);
   }
 
+  function handleEditItem(id, description) {
+    // encontra o indice do item a ser editado
+    const todoItemIndex = todos.findIndex((todo) => todo.id === id);
+
+    // cria um novo array de items com a copia do array de items atual
+    const newTodos = [...todos];
+
+    // atualiza o item do array com o novo valor de description
+    newTodos[todoItemIndex] = {
+      ...newTodos[todoItemIndex],
+      description,
+    };
+
+    // atualiza o estado de todos com o novo array de items
+    setTodos(newTodos);
+  }
+
   return (
     <>
-      <h1>Done It - Lista de Tarefas</h1>
+      <h1>Todo List</h1>
 
       <AddTodoInput onAddItem={handleAddNewTodoItem} />
 
       {todos.map((todo) => (
-        <TodoItem description={todo.description} />
+        <TodoItem description={todo.description} onEditItem={handleEditItem} />
       ))}
     </>
   );
