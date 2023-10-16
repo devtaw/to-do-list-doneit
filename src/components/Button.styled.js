@@ -4,7 +4,7 @@ const ButtonVariants = {
   default: "#3BBED4",
   sucess: "#4BEEB4",
   danger: "#ff7f7f",
-  edit: "#b9d6f2",
+  edit: "#96DCE8",
 };
 
 export const ButtonStyled = styled.button`

@@ -36,7 +36,7 @@ export function Filter({ onFilterChange, onFilterStateChange }) {
           value={filterDescription || ""}
           aria-label="Buscar por tarefa"
         />
-        <MagnifyingGlass color="#6985C0" size={32} />
+        <MagnifyingGlass color="#29A6BC" size={32} />
       </Container>
 
       <FilterByStateContainer>
