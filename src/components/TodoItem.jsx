@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CheckboxInput, Container, Description, TextInput, ButtonDelete } from "./TodoItem.styled";
+import { Button } from "./Button";
 
 /**
  * @typedef {Object} TodoItemProps
@@ -51,11 +52,13 @@ export function TodoItem(props) {
         {isEditing && <TextInput type="text" value={description} onChange={handleDescriptionChange} />}
       </div>
       <div className="actions">
-        {!isEditing && <button onClick={handleEditClick}>Edit</button>}
+        {!isEditing && <Button onClick={handleEditClick}>Edit</Button>}
 
-        {isEditing && <button onClick={handleSaveClick}>Save</button>}
+        {isEditing && <Button onClick={handleSaveClick}>Save</Button>}
 
-        <ButtonDelete onClick={handleDeleteClick}>Delete</ButtonDelete>
+        <Button onClick={handleDeleteClick} variant="danger">
+          Delete
+        </Button>
       </div>
     </Container>
   );

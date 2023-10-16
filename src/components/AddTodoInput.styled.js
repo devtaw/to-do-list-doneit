@@ -22,7 +22,3 @@ export const TextInput = styled.input`
   color: #333;
   outline: none; // remove o contorno ao clicar no input
 `;
-
-export const Button = styled.button`
-  background-color: #4caf50;
-`;

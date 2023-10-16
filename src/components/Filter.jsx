@@ -1,9 +1,12 @@
 import { Container, Content } from "./Filter.styled";
 import { TextInput } from "./TodoItem.styled";
 
-// @typedef {Object} FilterProps
-// @property {function} onFilterChange
-// @param {FilterProps} props
+/**
+ * @typedef {Object} FilterProps
+ * @property {function} onFilterChange
+ *
+ * @param {FilterProp} props
+ */
 
 export function Filter(props) {
   function handleFilterChange(event) {
