@@ -36,7 +36,7 @@ function App() {
   }
   function handleFilter(description) {
     setFilterText(description);
-    const newFilteredTodos = todos.filter((todo) => todo.description.includes(description));
+    const newFilteredTodos = todos.filter((todo) => todo.description.toUpperCase().includes(description.toUpperCase()));
     setFilteredTodos(newFilteredTodos);
   }
   function handleDeleteItem(id) {
