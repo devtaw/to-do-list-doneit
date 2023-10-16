@@ -7,3 +7,18 @@
 **Objetivo:** Permitir que o usuário gerencie suas tarefas de forma eficiente: adicionando, editando, marcando como concluídas e deletando. O aplicativo possui recurso de filtragem e busca para facilitar a localização de tarefas específicas.
 
 **Link da página:** https://devtaw.github.io/to-do-list-doneit/
+
+## 🤝 Colaboradores
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="./src/assets/img/profile-picture.png" width="100px;" alt="Foto de perfil"/><br>
+        <sub>
+          <b>Tawany Simões (Taw)</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+ </table>
