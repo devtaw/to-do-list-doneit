@@ -6,6 +6,7 @@ import { Button } from "./Button";
  * @typedef {Object} TodoItemProps
  * @property {number} id
  * @property {string} description
+ * @property {boolean} isChecked
  * @property {function} onEditItem
  * @property {function} onDeleteItem
  *
@@ -14,7 +15,7 @@ import { Button } from "./Button";
 export function TodoItem(props) {
   const [isEditing, setIsEditing] = useState(false);
   const [description, setDescription] = useState(props.description);
-  const [isCompleted, setIsCompleted] = useState(false);
+  const [isCompleted, setIsCompleted] = useState(props.isChecked || false);
 
   function handleEditClick() {
     // atualiza o estado de isEditing para o valor true
@@ -26,7 +27,9 @@ export function TodoItem(props) {
     // atualiza o estado de isEditing para o valor false
     // para que o input de texto seja escondido
     setIsEditing(false);
-    props.onEditItem(props.id, description);
+    props.onEditItem(props.id, {
+      description,
+    });
   }
 
   function handleDeleteClick() {
@@ -39,15 +42,17 @@ export function TodoItem(props) {
     setDescription(event.target.value);
   }
 
+  function handleSetCompletion(event) {
+    setIsCompleted(event.target.checked);
+    props.onEditItem(props.id, {
+      isCompleted: event.target.checked,
+    });
+  }
+
   return (
     <Container state={isEditing ? "active" : "default"}>
       <div className="checkbox">
-        <CheckboxInput
-          type="checkbox"
-          onChange={(event) => {
-            setIsCompleted(event.target.checked);
-          }}
-        />
+        <CheckboxInput type="checkbox" checked={isCompleted} onChange={handleSetCompletion} />
       </div>
       <div className="description">
         {!isEditing && <Description state={isCompleted ? "completed" : "non-completed"}>{props.description}</Description>}

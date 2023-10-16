@@ -9,8 +9,9 @@ import logo from "./assets/img/logo-done-it.svg";
 function App() {
   const [todos, setTodos] = useState([]);
   const [filterText, setFilterText] = useState("");
+  const [filterState, setFilterState] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([]);
-  const todoList = filterText.length ? filteredTodos : todos;
+  const todoList = filterText.length || filterState !== "all" ? filteredTodos : todos;
 
   function handleAddNewTodoItem(description) {
     setTodos((todos) => [
@@ -23,23 +24,42 @@ function App() {
     ]);
   }
 
-  function handleEditItem(id, description) {
+  function handleEditItem(id, newData) {
     // encontra o indice do item a ser editado
     const todoItemIndex = todos.findIndex((todo) => todo.id === id);
     // cria um novo array de items com a copia do array de items atual
     const newTodos = [...todos];
-    // atualiza o item do array com o novo valor de description
+    // atualiza o item do array com as novas informacoes do item
     newTodos[todoItemIndex] = {
       ...newTodos[todoItemIndex],
-      description,
+      ...newData,
     };
     // atualiza o estado de todos com o novo array de items
     setTodos(newTodos);
   }
 
   function handleFilter(description) {
+    setFilterState("all");
     setFilterText(description);
     const newFilteredTodos = todos.filter((todo) => todo.description.toUpperCase().includes(description.toUpperCase()));
+    setFilteredTodos(newFilteredTodos);
+  }
+
+  function handleFilterState(state) {
+    console.log("handlefilter state: " + state);
+    setFilterText("");
+    setFilterState(state);
+    const newFilteredTodos = todos.filter((todo) => {
+      if (state === "done") {
+        return todo.isCompleted === true;
+      }
+
+      if (state === "undone") {
+        return todo.isCompleted === false;
+      }
+
+      return true;
+    });
     setFilteredTodos(newFilteredTodos);
   }
 
@@ -55,13 +75,13 @@ function App() {
       <Header>
         <Logo src={logo} />
 
-        <Filter onFilterChange={handleFilter} />
+        <Filter onFilterChange={handleFilter} onFilterStateChange={handleFilterState} />
       </Header>
 
       <AddTodoInput onAddItem={handleAddNewTodoItem} />
 
       {todoList.map((todo) => (
-        <TodoItem key={todo.id} id={todo.id} description={todo.description} onEditItem={handleEditItem} onDeleteItem={handleDeleteItem} />
+        <TodoItem key={todo.id} id={todo.id} description={todo.description} isChecked={todo.isCompleted} onEditItem={handleEditItem} onDeleteItem={handleDeleteItem} />
       ))}
     </>
   );

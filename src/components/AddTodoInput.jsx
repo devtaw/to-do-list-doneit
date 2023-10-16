@@ -21,7 +21,12 @@ export function AddTodoInput(props) {
 
   return (
     <Container>
-      <TextInput placeholder="Adicione uma nova tarefa..." value={description} onChange={(event) => setDescription(event.target.value)} />
+      <TextInput
+        placeholder="Adicione uma nova tarefa..."
+        value={description}
+        onChange={(event) => setDescription(event.target.value)}
+        aria-label="Adicione uma nova tarefa"
+      />
       <Button onClick={handleClickButton} variant="sucess">
         Adicionar
       </Button>
