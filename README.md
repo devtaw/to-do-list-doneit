@@ -12,7 +12,7 @@
 
 - [Descrição do projeto](#descrição-%EF%B8%8F)
 
-- [Funcionalidades do projeto](#funcionalidades-%EF%B8%8F)
+- [Funcionalidades do projeto](#funcionalidades-🔨)
 
 - [Técnicas e tecnologias utilizadas no projeto](#técnicas-e-tecnologias-utilizadas-%EF%B8%8F)
 
@@ -36,12 +36,12 @@
 
 ## Funcionalidades 🔨
 
-1. :white_check_mark: `Adicionar itens:` Acrescenta novas tarefas à lista de afazeres;
-2. :white_check_mark: `Editar itens:` Ajusta as tarefas da lista visando atualizações;
-3. :white_check_mark: `Deletar itens:` Remove as tarefas indesejadas da lista de afazeres;
-4. :white_check_mark: `Marcar itens concluídos:` Sinaliza com checked as tarefas feitas;
-5. :white_check_mark: `Buscar tarefas:` Encontra tarefas específicas ao informar texto;
-6. :white_check_mark: `Filtrar tarefas:` Mostra as tarefas de acordo com seu status atual.
+1. :white_check_mark: `Adicionar itens` Acrescenta novas tarefas à lista de afazeres;
+2. :white_check_mark: `Editar itens` Ajusta as tarefas da lista visando atualizações;
+3. :white_check_mark: `Deletar itens` Remove as tarefas indesejadas da lista de afazeres;
+4. :white_check_mark: `Marcar itens concluídos` Sinaliza com checked as tarefas feitas;
+5. :white_check_mark: `Buscar tarefas` Encontra tarefas específicas ao informar texto;
+6. :white_check_mark: `Filtrar tarefas` Mostra as tarefas de acordo com seu status atual.
 
 ## Técnicas e tecnologias utilizadas 💻
 
