@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import logo from "./assets/img/logo-done-it.svg";
 
 export const Header = styled.div`
   display: flex;
@@ -8,4 +9,8 @@ export const Header = styled.div`
   h1 {
     margin: 0;
   }
+`;
+
+export const Logo = styled.img`
+  width: 262px;
 `;

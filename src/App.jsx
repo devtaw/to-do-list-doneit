@@ -3,7 +3,8 @@ import "./App.css";
 import { TodoItem } from "./components/TodoItem";
 import { AddTodoInput } from "./components/AddTodoInput";
 import { Filter } from "./components/Filter";
-import { Header } from "./App.styled";
+import { Header, Logo } from "./App.styled";
+import logo from "./assets/img/logo-done-it.svg";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -48,7 +49,7 @@ function App() {
   return (
     <>
       <Header>
-        <h1>Todo List</h1>
+        <Logo src={logo} />
 
         <Filter onFilterChange={handleFilter} />
       </Header>
