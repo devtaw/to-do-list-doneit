@@ -10,7 +10,7 @@
 
 - [Resumo do projeto](#resumo)
 
-- [Descrição do projeto](#descrição-⭐️)
+- [Descrição do projeto](#descrição-%EF%B8%8F)
 
 - [Funcionalidades do projeto](#funcionalidades-🔨)
 
