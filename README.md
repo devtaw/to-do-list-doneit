@@ -6,6 +6,24 @@
 
 <p align="center"> <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/></p>
 
+### Tópicos
+
+- [Resumo do projeto](#resumo)
+
+- [Descrição do projeto](#descrição-⭐️)
+
+- [Funcionalidades do projeto](#funcionalidades-🔨)
+
+- [Técnicas e tecnologias utilizadas no projeto](#técnicas-e-tecnologias-utilizadas-💻)
+
+- [Paleta de Cores utilizada no projeto](#paleta-de-cores-🎨)
+
+- [Instalação do projeto](#como-instalar-⚙️)
+
+- [Acesso ao projeto](#acesso-📁)
+
+- [Desenvolvedora do projeto](#desenvolvedora-:octocat:)
+
 ## Resumo
 
 <p align="justify"> Aplicativo To-do List capaz de permitir que o usuário gerencie sua lista de tarefas de forma simples e eficiente.</p>
@@ -18,12 +36,12 @@
 
 ## Funcionalidades 🔨
 
-1. [x] `Adicionar itens` Acrescenta novas tarefas à lista de afazeres;
-2. [x] `Editar itens` Ajusta as tarefas da lista visando atualizações;
-3. [x] `Deletar itens` Remove as tarefas indesejadas da lista de afazeres;
-4. [x] `Marcar itens concluídos` Sinaliza com checked as tarefas feitas;
-5. [x] `Buscar tarefas` Encontra tarefas específicas ao digitar texto;
-6. [x] `Filtrar tarefas` Mostra as tarefas de acordo com seu status atual.
+1. :white_check_mark: `Adicionar itens:` Acrescenta novas tarefas à lista de afazeres;
+2. :white_check_mark: `Editar itens:` Ajusta as tarefas da lista visando atualizações;
+3. :white_check_mark: `Deletar itens:` Remove as tarefas indesejadas da lista de afazeres;
+4. :white_check_mark: `Marcar itens concluídos:` Sinaliza com checked as tarefas feitas;
+5. :white_check_mark: `Buscar tarefas:` Encontra tarefas específicas ao informar texto;
+6. :white_check_mark: `Filtrar tarefas:` Mostra as tarefas de acordo com seu status atual.
 
 ## Técnicas e tecnologias utilizadas 💻
 
