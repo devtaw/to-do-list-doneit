@@ -10,19 +10,21 @@
 
 - [Resumo do projeto](#resumo)
 
-- [Descrição do projeto](#descrição-%EF%B8%8F)
+- [Descrição do projeto](#descrição)
 
-- [Funcionalidades do projeto](#funcionalidades-🔨)
+- [Funcionalidades do projeto](#funcionalidades-hammer)
 
 - [Técnicas e tecnologias utilizadas no projeto](#técnicas-e-tecnologias-utilizadas-%EF%B8%8F)
 
-- [Paleta de Cores utilizada no projeto](#paleta-de-cores-%EF%B8%8F)
+- [Paleta de Cores utilizada no projeto](#paleta-de-cores-art)
+
+- [Requisitos para utilizar o projeto](#pré-requisitos-warning)
 
 - [Instalação do projeto](#como-instalar-%EF%B8%8F)
 
 - [Acesso ao projeto](#acesso-%EF%B8%8F)
 
-- [Desenvolvedora do projeto](#desenvolvedora-%EF%B8%8F)
+- [Desenvolvedora do projeto](#desenvolvedora-octocat)
 
 ## Resumo
 
@@ -34,7 +36,7 @@
 
 <b>Link para acessar o app:</b> https://to-do-list-doneit.vercel.app/
 
-## Funcionalidades 🔨
+## Funcionalidades :hammer:
 
 1. :white_check_mark: `Adicionar itens` Acrescenta novas tarefas à lista de afazeres;
 2. :white_check_mark: `Editar itens` Ajusta as tarefas da lista visando atualizações;
@@ -55,11 +57,11 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-## Paleta de cores 🎨
+## Paleta de cores :art:
 
 <img src="./src/assets/img/paleta-cores-do-it-app.png" width="500x;" alt="Paleta de Cores do Projeto"/>
 
-## Pré-requisitos:
+## Pré-requisitos :warning:
 
 Certifique-se de ter o Node.js instalado em seu sistema. Você pode baixá-lo em nodejs.org.
 Node.js
