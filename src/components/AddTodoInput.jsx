@@ -11,6 +11,10 @@ import { Button } from "./Button";
 export function AddTodoInput(props) {
   const [description, setDescription] = useState("");
   function handleClickButton() {
+    if (description.trim()?.length < 3) {
+      window.alert("Informe um texto válido que possua 3 ou mais caracteres!");
+      return;
+    }
     props.onAddItem(description);
     setDescription("");
   }
