@@ -1,14 +1,28 @@
-# ✔️ Lista de Tarefas | Do It
+<p align="center"><img src="./src/assets/img/logo-do-it.svg" width="300px;" alt="Logo - Do It"/>
 
-<img src="./src/assets/img/ui-tela-do-it-app.png" width="700px;" alt="Tela de Interface do Usuário"/>
+<h1 align="center"> To-do List | Do It </h1>
 
-- **Descrição:** Projeto individual intitulado _“Javascript e React: Lista de tarefas”_ desenvolvido durante o _Módulo 5 - Frameworks, bibliotecas, tecnologias client-side/front-end + Postura profissional e Inovação_ do curso de formação _WebDev Full Stack JavaScript_ da _Resilia Educação_ em parceria com o programa _Códigos do Amanhã_ da _EBANX_.
+## Descrição do projeto ⭐️
 
-- **Sobre:** O projeto consiste no desenvolvimento de um aplicativo de lista de tarefas utilizando JavaScript e React.
+<p align="justify"> Aplicativo To-do List capaz de permitir que o usuário gerencie sua lista de tarefas de forma simples e eficiente.</p>
 
-- **Objetivo:** Permitir que o usuário gerencie suas tarefas de forma eficiente: adicionando, editando, marcando como concluídas e deletando. O aplicativo possui recurso de filtragem e busca para facilitar a localização de tarefas específicas.
+<b>Funcionalidades:</b>
 
-- **Link para acessar o app:** https://to-do-list-doneit.vercel.app/
+- [x] Adicionar, editar e deletar itens da lista de tarefas;
+- [x] Marcar itens da lista de tarefas como concluídos;
+- [x] Buscar tarefas específicas por parte de texto;
+- [x] Filtrar tarefas conforme seu status atual.
+
+<p align="justify"> <b>Sobre:</b> O app <b>Do It - Lista de Tarefas</b> foi desenvolvido enquanto projeto individual intitulado “Javascript e React: Lista de Tarefas” para fins educacionais visando obtenção de certificado do "Módulo 5: Frameworks, bibliotecas, tecnologias client-side/front-end + Postura profissional e Inovação" do curso de formação <b>WebDev Full Stack JavaScript</b> da Resilia Educação em parceria com o programa "Códigos do Amanhã" da <b>EBANX</b>.</p>
+
+<b>Link para acessar o app:</b> https://to-do-list-doneit.vercel.app/
+
+## Tecnologias utilizadas no projeto 💻
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ## 🎨 Paleta de cores utilizada no projeto:
 
@@ -50,10 +64,6 @@ cd to-do-list-doneit
 - **Instale as dependências do projeto:**
 
 ```bash
-npm create vite@latest to-do-list-doneit -- --template react
-```
-
-```bash
 npm install
 ```
 
@@ -63,13 +73,11 @@ npm install
 npm run dev
 ```
 
-- **O aplicativo estará disponível no seu navegador pelo link:**
+- **O aplicativo ficará disponível no seu navegador pelo link:**
 
-```bash
 http://127.0.0.1:5173/
-```
 
-## 🤝 Colaboradora
+## Desenvolvedora :octocat:
 
 <table>
   <tr>
