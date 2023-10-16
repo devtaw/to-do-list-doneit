@@ -3,15 +3,13 @@ import "./App.css";
 import { TodoItem } from "./components/TodoItem";
 import { AddTodoInput } from "./components/AddTodoInput";
 import { Filter } from "./components/Filter";
+import { Header } from "./App.styled";
 
 function App() {
   const [todos, setTodos] = useState([]);
-
   const [filterText, setFilterText] = useState("");
   const [filteredTodos, setFilteredTodos] = useState([]);
-
   const todoList = filterText.length ? filteredTodos : todos;
-
   function handleAddNewTodoItem(description) {
     setTodos((todos) => [
       ...todos,
@@ -35,28 +33,28 @@ function App() {
     // atualiza o estado de todos com o novo array de items
     setTodos(newTodos);
   }
-
   function handleFilter(description) {
     setFilterText(description);
-
     const newFilteredTodos = todos.filter((todo) => todo.description.includes(description));
-
     setFilteredTodos(newFilteredTodos);
   }
-
   function handleDeleteItem(id) {
     // filtra os items que não devem ser removidos
     const newTodos = todos.filter((todo) => todo.id !== id);
-
     // atualiza o estado de todos com o novo array de items
     setTodos(newTodos);
   }
 
   return (
     <>
-      <h1>Todo List</h1>
-      <Filter onFilterChange={handleFilter} />
+      <Header>
+        <h1>Todo List</h1>
+
+        <Filter onFilterChange={handleFilter} />
+      </Header>
+
       <AddTodoInput onAddItem={handleAddNewTodoItem} />
+
       {todoList.map((todo) => (
         <TodoItem key={todo.id} id={todo.id} description={todo.description} onEditItem={handleEditItem} onDeleteItem={handleDeleteItem} />
       ))}
