@@ -1,5 +1,6 @@
 import { Container, Content } from "./Filter.styled";
 import { TextInput } from "./TodoItem.styled";
+import { MagnifyingGlass } from "@phosphor-icons/react";
 
 /**
  * @typedef {Object} FilterProps
@@ -17,6 +18,7 @@ export function Filter(props) {
     <Content>
       <Container>
         <TextInput type="text" placeholder="Filtrar por nome" onChange={handleFilterChange} />
+        <MagnifyingGlass color="#3BBED4" size={32} />
       </Container>
     </Content>
   );
