@@ -10,8 +10,7 @@ import { ButtonStyled } from "./Button.styled";
 export function Button({ variant, children, ...rest }) {
   return (
     <ButtonStyled variant={variant} {...rest}>
-      {" "}
-      {children}{" "}
+      {children}
     </ButtonStyled>
   );
 }

@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+const ButtonVariants = {
+  default: "#3BBED4",
+  sucess: "#1EDFAA",
+  danger: "#ff7f7f",
+  edit: "#b9d6f2",
+};
+
 export const ButtonStyled = styled.button`
   border-radius: 8px;
   border: 1px solid transparent;
@@ -19,5 +26,5 @@ export const ButtonStyled = styled.button`
     outline: 4px auto -webkit-focus-ring-color;
   }
 
-  background-color: ${(props) => (props.variant === "sucess" ? "#1EDFAA" : props.variant === "danger" ? "#ff7f7f" : "#3BBED4")};
+  background-color: ${(props) => ButtonVariants[props.variant] || "#3BBED4"};
 `;

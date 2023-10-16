@@ -52,7 +52,11 @@ export function TodoItem(props) {
         {isEditing && <TextInput type="text" value={description} onChange={handleDescriptionChange} />}
       </div>
       <div className="actions">
-        {!isEditing && <Button onClick={handleEditClick}>Editar</Button>}
+        {!isEditing && (
+          <Button variant="edit" onClick={handleEditClick}>
+            Editar
+          </Button>
+        )}
 
         {isEditing && <Button onClick={handleSaveClick}>Salvar</Button>}
 
