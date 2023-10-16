@@ -2,29 +2,36 @@
 
 <h1 align="center"> To-do List | Do It </h1>
 
-## Descrição do projeto ⭐️
+## Resumo
 
 <p align="justify"> Aplicativo To-do List capaz de permitir que o usuário gerencie sua lista de tarefas de forma simples e eficiente.</p>
 
-<b>Funcionalidades:</b>
+## Descrição ⭐️
 
-- [x] Adicionar, editar e deletar itens da lista de tarefas;
-- [x] Marcar itens da lista de tarefas como concluídos;
-- [x] Buscar tarefas específicas por parte de texto;
-- [x] Filtrar tarefas conforme seu status atual.
-
-<p align="justify"> <b>Sobre:</b> O app <b>Do It - Lista de Tarefas</b> foi desenvolvido enquanto projeto individual intitulado “Javascript e React: Lista de Tarefas” para fins educacionais visando obtenção de certificado do "Módulo 5: Frameworks, bibliotecas, tecnologias client-side/front-end + Postura profissional e Inovação" do curso de formação <b>WebDev Full Stack JavaScript</b> da Resilia Educação em parceria com o programa "Códigos do Amanhã" da <b>EBANX</b>.</p>
+<p align="justify"> O app <b>Do It - Lista de Tarefas</b> foi desenvolvido para a avaliação "Projeto Individual - Javascript e React: Lista de Tarefas” do "Módulo 5: Frameworks, bibliotecas, tecnologias client-side/front-end + Postura profissional e Inovação" do curso de formação <b>WebDev Full Stack JavaScript</b> da Resilia Educação em parceria com o programa "Códigos do Amanhã" da <b>EBANX</b>.</p>
 
 <b>Link para acessar o app:</b> https://to-do-list-doneit.vercel.app/
 
-## Tecnologias utilizadas no projeto 💻
+## Funcionalidades 🔨
+
+- [x] Adicionar, editar e deletar itens da lista de tarefas;
+- [x] Marcar itens da lista de tarefas como concluídos;
+- [x] `Funcionalidade 1` Buscar tarefas específicas por parte de texto;
+- `Funcionalidade 1` [x] Filtrar tarefas conforme seu status atual.
+
+## Técnicas e tecnologias utilizadas 💻
+
+- React `useState` Hook
+- Estilos dinâmicos com `styled-components`
+- Componentes funcionais com `React`
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-## 🎨 Paleta de cores utilizada no projeto:
+## Paleta de cores 🎨
 
 <img src="./src/assets/img/paleta-cores-do-it-app.png" width="500x;" alt="Paleta de Cores do Projeto"/>
 
@@ -33,7 +40,7 @@
 Certifique-se de ter o Node.js instalado em seu sistema. Você pode baixá-lo em nodejs.org.
 Node.js
 
-## ⚙️ Como instalar o projeto:
+## Como instalar ⚙️
 
 - **Clone o repositório para seu sistema local:**
 
