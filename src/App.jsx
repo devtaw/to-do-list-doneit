@@ -4,7 +4,7 @@ import { TodoItem } from "./components/TodoItem";
 import { AddTodoInput } from "./components/AddTodoInput";
 import { Filter } from "./components/Filter";
 import { Header, Logo } from "./App.styled";
-import logo from "./assets/img/logo-done-it.svg";
+import logo from "./assets/img/logo-do-it.svg";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -81,7 +81,14 @@ function App() {
       <AddTodoInput onAddItem={handleAddNewTodoItem} />
 
       {todoList.map((todo) => (
-        <TodoItem key={todo.id} id={todo.id} description={todo.description} isChecked={todo.isCompleted} onEditItem={handleEditItem} onDeleteItem={handleDeleteItem} />
+        <TodoItem
+          key={todo.id}
+          id={todo.id}
+          description={todo.description}
+          isChecked={todo.isCompleted}
+          onEditItem={handleEditItem}
+          onDeleteItem={handleDeleteItem}
+        />
       ))}
     </>
   );

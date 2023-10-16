@@ -29,7 +29,13 @@ export function Filter({ onFilterChange, onFilterStateChange }) {
   return (
     <Content>
       <Container>
-        <TextInput type="text" placeholder="Buscar por tarefa..." onChange={handleFilterChange} value={filterDescription || ""} aria-label="Buscar por tarefa" />
+        <TextInput
+          type="text"
+          placeholder="Buscar por tarefa..."
+          onChange={handleFilterChange}
+          value={filterDescription || ""}
+          aria-label="Buscar por tarefa"
+        />
         <MagnifyingGlass color="#6985C0" size={32} />
       </Container>
 
@@ -37,17 +43,38 @@ export function Filter({ onFilterChange, onFilterStateChange }) {
         <legend>Ou filtre por status:</legend>
 
         <div>
-          <input id="filterAll" type="radio" name="filterState" value="all" onChange={handleFilterStateChange} checked={filterStateValue === "all"} />
+          <input
+            id="filterAll"
+            type="radio"
+            name="filterState"
+            value="all"
+            onChange={handleFilterStateChange}
+            checked={filterStateValue === "all"}
+          />
           <label htmlFor="filterAll">Todos</label>
         </div>
 
         <div>
-          <input id="filterDone" type="radio" name="filterState" value="done" onChange={handleFilterStateChange} checked={filterStateValue === "done"} />
+          <input
+            id="filterDone"
+            type="radio"
+            name="filterState"
+            value="done"
+            onChange={handleFilterStateChange}
+            checked={filterStateValue === "done"}
+          />
           <label htmlFor="filterDone">Feitos</label>
         </div>
 
         <div>
-          <input id="filterUndone" type="radio" name="filterState" value="undone" onChange={handleFilterStateChange} checked={filterStateValue === "undone"} />
+          <input
+            id="filterUndone"
+            type="radio"
+            name="filterState"
+            value="undone"
+            onChange={handleFilterStateChange}
+            checked={filterStateValue === "undone"}
+          />
           <label htmlFor="filterUndone">A Fazer</label>
         </div>
       </FilterByStateContainer>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ButtonVariants = {
   default: "#3BBED4",
-  sucess: "#1EDFAA",
+  sucess: "#4BEEB4",
   danger: "#ff7f7f",
   edit: "#b9d6f2",
 };
