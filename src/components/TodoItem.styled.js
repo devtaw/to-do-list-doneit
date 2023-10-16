@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const Container = styled.div`
   display: flex;
   align-items: center;
@@ -9,6 +10,10 @@ export const Container = styled.div`
   border-radius: 0.5rem;
   padding: 1rem;
   margin-top: 1rem;
+
+  box-sizing: border-box;
+  border: ${(props) => (props.state === "active" ? "3px solid #3bbed4" : "none")};
+
   .checkbox {
     width: 1.5rem;
   }

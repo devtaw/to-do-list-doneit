@@ -38,7 +38,7 @@ export function TodoItem(props) {
     setDescription(event.target.value);
   }
   return (
-    <Container>
+    <Container state={isEditing ? "active" : "default"}>
       <div className="checkbox">
         <CheckboxInput
           type="checkbox"
