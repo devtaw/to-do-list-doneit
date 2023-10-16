@@ -18,7 +18,7 @@ export function Filter(props) {
     <Content>
       <Container>
         <TextInput type="text" placeholder="Filtrar por nome" onChange={handleFilterChange} />
-        <MagnifyingGlass color="#3BBED4" size={32} />
+        <MagnifyingGlass color="#6985C0" size={32} />
       </Container>
     </Content>
   );

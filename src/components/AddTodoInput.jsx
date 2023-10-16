@@ -17,7 +17,7 @@ export function AddTodoInput(props) {
     <Container>
       <TextInput placeholder="Adicione uma nova tarefa..." value={description} onChange={(event) => setDescription(event.target.value)} />
       <Button onClick={handleClickButton} variant="sucess">
-        Add
+        Adicionar
       </Button>
     </Container>
   );

@@ -19,5 +19,5 @@ export const ButtonStyled = styled.button`
     outline: 4px auto -webkit-focus-ring-color;
   }
 
-  background-color: ${(props) => (props.variant === "sucess" ? "#00ff7f" : props.variant === "danger" ? "#ff7f7f" : "#b9d6f2")};
+  background-color: ${(props) => (props.variant === "sucess" ? "#1EDFAA" : props.variant === "danger" ? "#ff7f7f" : "#3BBED4")};
 `;
