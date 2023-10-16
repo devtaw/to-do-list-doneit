@@ -1,6 +1,10 @@
-<p align="center"><img src="./src/assets/img/logo-do-it.svg" width="300px;" alt="Logo - Do It"/>
+<p align="center"><img src="./src/assets/img/logo-do-it.svg" width="300px;" alt="Logo - Do It"/></p>
+
+<hr>
 
 <h1 align="center"> To-do List | Do It </h1>
+
+<p align="center"> <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/></p>
 
 ## Resumo
 
@@ -14,10 +18,12 @@
 
 ## Funcionalidades 🔨
 
-- [x] Adicionar, editar e deletar itens da lista de tarefas;
-- [x] Marcar itens da lista de tarefas como concluídos;
-- [x] `Funcionalidade 1` Buscar tarefas específicas por parte de texto;
-- `Funcionalidade 1` [x] Filtrar tarefas conforme seu status atual.
+1. [x] `Adicionar itens` Acrescenta novas tarefas à lista de afazeres;
+2. [x] `Editar itens` Ajusta as tarefas da lista visando atualizações;
+3. [x] `Deletar itens` Remove as tarefas indesejadas da lista de afazeres;
+4. [x] `Marcar itens concluídos` Sinaliza com checked as tarefas feitas;
+5. [x] `Buscar tarefas` Encontra tarefas específicas ao digitar texto;
+6. [x] `Filtrar tarefas` Mostra as tarefas de acordo com seu status atual.
 
 ## Técnicas e tecnologias utilizadas 💻
 
@@ -83,6 +89,10 @@ npm run dev
 - **O aplicativo ficará disponível no seu navegador pelo link:**
 
 http://127.0.0.1:5173/
+
+## Acesso 📁
+
+- Acesse os arquivos do projeto clicando [aqui](https://github.com/devtaw/to-do-list-doneit/tree/main/src).
 
 ## Desenvolvedora :octocat:
 
