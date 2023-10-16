@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import logo from "./assets/img/logo-done-it.svg";
 
 export const Header = styled.div`
   display: flex;

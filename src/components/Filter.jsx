@@ -8,7 +8,6 @@ import { MagnifyingGlass } from "@phosphor-icons/react";
  *
  * @param {FilterProp} props
  */
-
 export function Filter(props) {
   function handleFilterChange(event) {
     props.onFilterChange(event.target.value);

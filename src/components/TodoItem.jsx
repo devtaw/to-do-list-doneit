@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CheckboxInput, Container, Description, TextInput, ButtonDelete } from "./TodoItem.styled";
+import { CheckboxInput, Container, Description, TextInput } from "./TodoItem.styled";
 import { Button } from "./Button";
 
 /**
@@ -11,16 +11,17 @@ import { Button } from "./Button";
  *
  * @param {TodoItemProps} props
  */
-
 export function TodoItem(props) {
   const [isEditing, setIsEditing] = useState(false);
   const [description, setDescription] = useState(props.description);
   const [isCompleted, setIsCompleted] = useState(false);
+
   function handleEditClick() {
     // atualiza o estado de isEditing para o valor true
     // para que o input de texto seja exibido
     setIsEditing(true);
   }
+
   function handleSaveClick() {
     // atualiza o estado de isEditing para o valor false
     // para que o input de texto seja escondido
@@ -37,6 +38,7 @@ export function TodoItem(props) {
     // para que o input de texto seja atualizado em tempo real
     setDescription(event.target.value);
   }
+
   return (
     <Container state={isEditing ? "active" : "default"}>
       <div className="checkbox">

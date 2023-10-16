@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, TextInput } from "./AddTodoInput.styled";
 import { Button } from "./Button";
+
 /**
  * @typedef {Object} AddTodoProps
  * @property {function} onAddItem
@@ -13,6 +14,7 @@ export function AddTodoInput(props) {
     props.onAddItem(description);
     setDescription("");
   }
+
   return (
     <Container>
       <TextInput placeholder="Adicione uma nova tarefa..." value={description} onChange={(event) => setDescription(event.target.value)} />

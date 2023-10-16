@@ -11,6 +11,7 @@ function App() {
   const [filterText, setFilterText] = useState("");
   const [filteredTodos, setFilteredTodos] = useState([]);
   const todoList = filterText.length ? filteredTodos : todos;
+
   function handleAddNewTodoItem(description) {
     setTodos((todos) => [
       ...todos,
@@ -21,6 +22,7 @@ function App() {
       },
     ]);
   }
+
   function handleEditItem(id, description) {
     // encontra o indice do item a ser editado
     const todoItemIndex = todos.findIndex((todo) => todo.id === id);
@@ -34,11 +36,13 @@ function App() {
     // atualiza o estado de todos com o novo array de items
     setTodos(newTodos);
   }
+
   function handleFilter(description) {
     setFilterText(description);
     const newFilteredTodos = todos.filter((todo) => todo.description.toUpperCase().includes(description.toUpperCase()));
     setFilteredTodos(newFilteredTodos);
   }
+
   function handleDeleteItem(id) {
     // filtra os items que não devem ser removidos
     const newTodos = todos.filter((todo) => todo.id !== id);

@@ -1,10 +1,12 @@
 import styled from "styled-components";
+
 export const Content = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
 `;
+
 export const Container = styled.div`
   display: flex;
   align-items: center;

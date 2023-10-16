@@ -10,13 +10,13 @@ export const Container = styled.div`
   border-radius: 0.5rem;
   padding: 1rem;
   margin-top: 1rem;
-
   box-sizing: border-box;
   border: ${(props) => (props.state === "active" ? "3px solid #3bbed4" : "none")};
 
   .checkbox {
     width: 1.5rem;
   }
+
   .description {
     flex: 1;
     text-align: left;
@@ -24,11 +24,13 @@ export const Container = styled.div`
     font-size: 1.2rem;
     margin-left: 0.5rem;
   }
+
   .actions {
     display: flex;
     gap: 0.5rem;
   }
 `;
+
 export const CheckboxInput = styled.input`
   width: 1.5rem;
   height: 1.5rem;
@@ -36,9 +38,11 @@ export const CheckboxInput = styled.input`
   margin-right: 1rem;
   cursor: pointer;
 `;
+
 export const Description = styled.span`
   text-decoration: ${(props) => (props.state === "completed" ? "line-through" : "none")};
 `;
+
 export const TextInput = styled.input`
   width: 100%;
   height: 38px;
@@ -47,8 +51,4 @@ export const TextInput = styled.input`
   background-color: transparent;
   color: #333;
   outline: none; // remove o contorno ao clicar no input
-`;
-
-export const ButtonDelete = styled.button`
-  background-color: #f44336;
 `;
