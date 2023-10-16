@@ -12,17 +12,17 @@
 
 - [Descrição do projeto](#descrição-%EF%B8%8F)
 
-- [Funcionalidades do projeto](#funcionalidades-🔨)
+- [Funcionalidades do projeto](#funcionalidades-%EF%B8%8F)
 
-- [Técnicas e tecnologias utilizadas no projeto](#técnicas-e-tecnologias-utilizadas-💻)
+- [Técnicas e tecnologias utilizadas no projeto](#técnicas-e-tecnologias-utilizadas-%EF%B8%8F)
 
-- [Paleta de Cores utilizada no projeto](#paleta-de-cores-🎨)
+- [Paleta de Cores utilizada no projeto](#paleta-de-cores-%EF%B8%8F)
 
-- [Instalação do projeto](#como-instalar-⚙️)
+- [Instalação do projeto](#como-instalar-%EF%B8%8F)
 
-- [Acesso ao projeto](#acesso-📁)
+- [Acesso ao projeto](#acesso-%EF%B8%8F)
 
-- [Desenvolvedora do projeto](#desenvolvedora-:octocat:)
+- [Desenvolvedora do projeto](#desenvolvedora-%EF%B8%8F)
 
 ## Resumo
 
