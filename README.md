@@ -6,7 +6,7 @@
 
 **Objetivo:** Permitir que o usuário gerencie suas tarefas de forma eficiente: adicionando, editando, marcando como concluídas e deletando. O aplicativo possui recurso de filtragem e busca para facilitar a localização de tarefas específicas.
 
-**Link da página:** https://devtaw.github.io/to-do-list-doneit/
+**Link da página:** https://to-do-list-doneit.vercel.app/
 
 ## 🤝 Colaboradora
 
