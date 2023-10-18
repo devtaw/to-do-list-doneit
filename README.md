@@ -22,7 +22,7 @@
 
 - [Instalação do projeto](#como-instalar-building_construction)
 
-- [Acesso ao projeto](#acesso-open_file_folder)
+- [Acesso ao projeto](#acesso-ao-projeto-open_file_folder)
 
 - [Desenvolvedora do projeto](#desenvolvedora-octocat)
 
@@ -38,12 +38,12 @@
 
 ## Funcionalidades :hammer_and_wrench:
 
-1. :white_check_mark: `Adicionar itens` Acrescenta novas tarefas à lista de afazeres;
-2. :white_check_mark: `Editar itens` Ajusta as tarefas da lista visando atualizações;
+1. :white_check_mark: `Adicionar itens` Acrescenta novas tarefas de modo simples à lista de afazeres;
+2. :white_check_mark: `Editar itens` Ajusta as tarefas diretamente na lista visando atualizações;
 3. :white_check_mark: `Deletar itens` Remove as tarefas indesejadas da lista de afazeres;
 4. :white_check_mark: `Marcar itens concluídos` Sinaliza com checked as tarefas feitas;
 5. :white_check_mark: `Buscar tarefas` Encontra tarefas específicas ao informar texto;
-6. :white_check_mark: `Filtrar tarefas` Mostra as tarefas de acordo com seu status atual.
+6. :white_check_mark: `Filtrar tarefas` Seleciona as tarefas de acordo com seu status atual (feitas ou a fazer).
 
 ## Técnicas e tecnologias utilizadas :desktop_computer:
 
@@ -76,18 +76,6 @@ Node.js
 git clone https://github.com/devtaw/to-do-list-doneit.git
 ```
 
-###### Com SSH:
-
-```bash
-git clone git@github.com:devtaw/to-do-list-doneit.git
-```
-
-###### Com GitHub CLI:
-
-```bash
-git clone gh repo clone devtaw/to-do-list-doneit
-```
-
 - **Acesse o diretório do projeto:**
 
 ```bash
@@ -96,11 +84,13 @@ cd to-do-list-doneit
 
 - **Instale as dependências do projeto:**
 
+###### Com gerenciador de pacotes npm:
+
 ```bash
 npm install
 ```
 
-- **Inicie o aplicativo:**
+- **Inicie a aplicação:**
 
 ```bash
 npm run dev
@@ -110,9 +100,10 @@ npm run dev
 
 http://127.0.0.1:5173/
 
-## Acesso :open_file_folder:
+## Acesso ao projeto :open_file_folder:
 
-- Acesse os arquivos do projeto clicando [aqui](https://github.com/devtaw/to-do-list-doneit/tree/main/src).
+- Acesse os arquivos de código-fonte clicando [aqui](https://github.com/devtaw/to-do-list-doneit/tree/main/src).
+- Ou faça o download dos arquivos de código-fonte clicando [aqui](https://github.com/devtaw/to-do-list-doneit/archive/refs/heads/main.zip).
 
 ## Desenvolvedora :octocat:
 
